@@ -1,13 +1,22 @@
-<nav class="nav">
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="logo nav-link">Restaurant</a>
     <label for="checkbox" class="hamburger">
-        <input type="checkbox" id="checkbox">
-        <span class="line line--top"></span>
-        <span class="line line--midle"></span>
-        <span class="line line--bottom"></span>
-      </label>
-    <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Reservation</a></li>
+      <input type="checkbox" id="checkbox" (click)="open()" [ngClass]="{'activa': true}">
+      <span class="line line--top"></span>
+      <span class="line line--midle"></span>
+      <span class="line line--bottom"></span>
+    </label>
+    <ul class="nav-menu ">
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">Sobre Nosotros</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">Menu de la Casa</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link nav-menu-link_activate">Reservaciones</a>
+      </li>
     </ul>
-</nav>
+  </nav>
+</header>

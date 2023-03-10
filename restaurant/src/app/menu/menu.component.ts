@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+   btn = document.querySelector("#checkbox");
+   nav = document.querySelector(".nav-menu");
 
-  constructor() { }
+  constructor() {
 
+  }
+  open(){
+
+  };
   ngOnInit(): void {
   }
 
